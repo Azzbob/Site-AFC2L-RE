@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ACF2L - Aéro Club de Frotey-Les-Lures</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<style>
+  .hero {
+    background: linear-gradient(rgba(0,0,0,.15), rgba(0,0,0,.15)), url("img/AC2FLAVION.png");
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+  }
+  .hero-title {
+    font-size: 5rem;
+    font-weight: bold;
+  }
+  .nav-pill-bar {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 50px;
+  }
+  .card-highlight {
+    background-color: #12213d;
+    color: #fff;
+  }
+  .card:hover {
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+  }
+  .card-bar {
+    width: 34px;
+    height: 4px;
+    border-radius: 2px;
+    margin-bottom: 18px;
+    background: #e8763c;
+  }
+  .card-highlight .card-bar {
+    background: #f0a94e;
+  }
+  .list-divider li {
+    border-top: 1px solid #e4dccb;
+    padding: 6px 0;
+    color: #6c757d;
+  }
+  .card-highlight .list-divider li {
+    border-top: 1px solid rgba(255,255,255,0.15);
+    color: #dbe2ef;
+  }
+  .galerie-grid {
+    column-count: 2;
+    column-gap: 15px;
+  }
+  @media (min-width: 768px) {
+    .galerie-grid {
+      column-count: 3;
+    }
+  }
+  .galerie-grid img {
+    width: 100%;
+    margin-bottom: 15px;
+    break-inside: avoid;
+  }
+  .site-nav {
+    position: fixed;
+    top: 20px;
+    left: 0;
+    right: 0;
+    z-index: 1030;
+  }
+</style>
+</head>
+<body>
+
+  <div id="accueil"></div>
+
+  <div class="site-nav container">
+    <div class="d-flex justify-content-center">
+      <ul class="nav nav-pills nav-pill-bar px-4 py-2 shadow-sm">
+        <li class="nav-item"><a class="nav-link text-dark" href="#accueil">Accueil</a></li>
+        <li class="nav-item"><a class="nav-link text-dark" href="#presentation">Qui sommes nous ?</a></li>
+        <li class="nav-item"><a class="nav-link text-dark" href="#tarifs">Catégorie D'ULM</a></li>
+        <li class="nav-item"><a class="nav-link text-dark" href="#galerie">Galerie</a></li>
+        <li class="nav-item"><a class="nav-link text-dark" href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <header class="hero d-flex flex-column text-white text-center">
+
+    <div class="container my-auto"></div>
+
+  </header>
+
+  <section id="presentation" class="container py-5 mt-4">
+    <div class="row align-items-center">
+      <div class="col-md-6">
+        <img src="img/presentation.webp" alt="Avions ACF2L" class="img-fluid rounded shadow-sm">
+      </div>
+      <div class="col-md-6">
+        <h2>Qui sommes-nous ?</h2>
+        <p>L'aéro-club est une Association Loi 1901, agréée Jeunesse et Sports, adhérente à la FFULM (Fédération Française d'ULM).</p>
+        <p>Elle assure la formation de pilotes et d'instructeurs. Et propose également des baptêmes de l'air.</p>
+
+        <div class="row text-center mt-4">
+          <div class="col-4">
+            <h3 class="text-warning">3</h3>
+            <p>types d'ULM</p>
+          </div>
+          <div class="col-4">
+            <h3 class="text-warning">1901</h3>
+            <p>association loi</p>
+          </div>
+          <div class="col-4">
+            <h3 class="text-warning">FFULM</h3>
+            <p>Fédération affiliée</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="tarifs" class="bg-light py-5">
+    <div class="container">
+      <h2>Baptêmes de l'air</h2>
+      <p>Trois façons de découvrir le vol, selon la sensation recherchée.</p>
+
+      <div class="row g-4 mt-3 align-items-end">
+
+        <div class="col-md-4">
+          <div class="card h-100 p-3 border-0 shadow-sm">
+            <div class="card-body">
+              <div class="card-bar"></div>
+              <h3 class="card-title">ULM Pendulaire</h3>
+              <p class="card-text text-muted">Une sensation de vol libre, à l'air ouvert, accompagné par un instructeur.</p>
+              <h4>190€</h4>
+              <p class="text-muted">20 minutes de vol</p>
+              <ul class="list-unstyled list-divider">
+                <li>Accompagnement par un instructeur</li>
+                <li>Survol de la région</li>
+              </ul>
+              <a href="#contact" class="btn btn-warning rounded-pill w-100">Réserver</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 mt-md-n4">
+          <div class="card card-highlight h-100 p-3 border-0 shadow">
+            <div class="card-body">
+              <div class="card-bar"></div>
+              <h3 class="card-title">ULM AutoGire</h3>
+              <p class="card-text">Prenez les commandes en douceur grâce au système à double commande.</p>
+              <h4>260€</h4>
+              <p>30 minutes de vol</p>
+              <ul class="list-unstyled list-divider">
+                <li>Prise en main de l'ULM</li>
+                <li>Système double commande</li>
+              </ul>
+              <a href="#contact" class="btn rounded-pill w-100" style="background:#f0a94e;color:#12213d;font-weight:600;">Réserver</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card h-100 p-3 border-0 shadow-sm">
+            <div class="card-body">
+              <div class="card-bar"></div>
+              <h3 class="card-title">ULM Multi-axes</h3>
+              <p class="card-text text-muted">Un pilotage proche de celui d'un avion, pour une première approche du pilotage.</p>
+              <h4>380€</h4>
+              <p class="text-muted">30 minutes de vol</p>
+              <ul class="list-unstyled list-divider">
+                <li>Découverte du pilotage</li>
+                <li>Accompagnement par un instructeur</li>
+              </ul>
+              <a href="#contact" class="btn btn-warning rounded-pill w-100">Réserver</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="galerie" class="container py-5">
+    <h2>Galerie</h2>
+    <p>Quelques images de nos vols et de nos appareils.</p>
+
+    <div class="galerie-grid mt-3">
+      <img src="img/photo1.jpg" alt="Galerie 1" class="rounded shadow-sm">
+      <img src="img/photo2.jpg" alt="Galerie 2" class="rounded shadow-sm">
+      <img src="img/photo3.jpg" alt="Galerie 3" class="rounded shadow-sm">
+      <img src="img/photo4.jpg" alt="Galerie 4" class="rounded shadow-sm">
+      <img src="img/photo5.JPG" alt="Galerie 5" class="rounded shadow-sm">
+    </div>
+  </section>
+
+  <footer id="contact" class="bg-dark text-light py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <h4>ACF2L</h4>
+          <p>Aéro Club de Frotey-Les-Lures. Formation de pilotes et baptêmes de l'air dans un cadre associatif depuis 1901.</p>
+        </div>
+        <div class="col-md-4">
+          <h5>Le club</h5>
+          <ul class="list-unstyled">
+            <li><a href="#presentation" class="text-light">Qui sommes-nous</a></li>
+            <li><a href="#tarifs" class="text-light">Tarifs</a></li>
+            <li><a href="#galerie" class="text-light">Galerie</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h5>Contact</h5>
+          <ul class="list-unstyled">
+            <li>contact@acf2l.fr</li>
+            <li>Frotey-Les-Lures, 70</li>
+          </ul>
+        </div>
+      </div>
+      <hr>
+      <p class="text-center mb-0">© 2026 ACF2L - Aéro Club de Frotey-Les-Lures</p>
+    </div>
+  </footer>
+</body>
+</html>
